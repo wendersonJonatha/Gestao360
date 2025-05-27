@@ -1,6 +1,5 @@
 package gestao360.Gestao360.model;
 
-import gestao360.Gestao360.enums.Cargo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,24 +9,19 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "usuario")
-public class Usuario {
+@Table(name = "unidade")
+public class Unidade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_usuario")
-    private Long idUsuario;
+    private Long idUnidade;
 
     @Column(nullable = false)
-    private String nome;
-
-    @Column(nullable = false, unique = true)
-    private String email;
+    private String nomeUnidade;
 
     @Column(nullable = false)
-    private String senha;
+    private String cidade;
 
-    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Cargo cargo;
+    private String estado;
 }
