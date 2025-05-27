@@ -5,23 +5,25 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "unidade")
-public class Unidade {
+@Table(name = "FeedBack")
+public class FeedBack {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idUnidade;
-
-    @Column(nullable = false, name = "Nome_unidade")
-    private String nomeUnidade;
+    private Long idFeedBack;
 
     @Column(nullable = false)
-    private String cidade;
+    private String mensagem;
 
     @Column(nullable = false)
-    private String estado;
+    private Boolean anonimo;
+
+    @Column(nullable = false, name = "Data_envio")
+    private LocalDateTime dataDeEnvio;
 }
