@@ -31,18 +31,8 @@ O **Gestor360** é um sistema de gestão interna voltado para empresas e organiz
 ## 📁 Estrutura do Projeto
 
 ```bash
-src/
- └── main/
-     ├── java/
-     │    └── com.gestor360
-     │         ├── controller/
-     │         ├── service/
-     │         ├── repository/
-     │         ├── model/
-     │         └── dto/
-     └── resources/
-          ├── application.properties
-          └── static/
+![deepseek_mermaid_20250527_b96d0b](https://github.com/user-attachments/assets/129228a6-8ef3-43fd-8217-a3e3a6e3fc8b)
+
 🚀 Como rodar o projeto localmente
 Pré-requisitos
 Java 17 instalado
