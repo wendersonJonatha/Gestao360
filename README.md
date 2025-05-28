@@ -6,10 +6,10 @@ O **Gestor360** é um sistema de gestão interna voltado para empresas e organiz
 
 ## 🧩 Funcionalidades
 
-- ✅ Cadastro e autenticação de usuários
-- 🏢 Cadastro de unidades (filiais ou setores)
-- 🎯 Registro e acompanhamento de metas por unidade
-- 👥 Vinculação de usuários a unidades
+- ✅ Cadastro e autenticação de usuários  
+- 🏢 Cadastro de unidades (filiais ou setores)  
+- 🎯 Registro e acompanhamento de metas por unidade  
+- 👥 Vinculação de usuários a unidades  
 - 📊 Dashboard com visualização de desempenho (em desenvolvimento)
 
 ---
@@ -30,17 +30,23 @@ O **Gestor360** é um sistema de gestão interna voltado para empresas e organiz
 
 ## 📁 Estrutura do Projeto
 
+### 🔄 Diagrama Entidade-Relacionamento
+
+![Image](https://github.com/user-attachments/assets/a94ce856-4b75-4012-834b-4caf44c31420)
+
+> O diagrama acima representa a estrutura de dados do sistema, com os relacionamentos entre Unidades, Usuários, Metas, Tarefas, Feedbacks e Postagens no Fórum.
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+### ✅ Pré-requisitos
+
+- Java 17 instalado  
+- PostgreSQL rodando  
+- Maven instalado  
+
 ```bash
-![deepseek_mermaid_20250527_b96d0b](https://github.com/user-attachments/assets/129228a6-8ef3-43fd-8217-a3e3a6e3fc8b)
-
-🚀 Como rodar o projeto localmente
-Pré-requisitos
-Java 17 instalado
-
-PostgreSQL rodando
-
-Maven instalado
-
 # 1. Clone o repositório
 git clone https://github.com/seu-usuario/gestor360.git
 cd gestor360
@@ -49,6 +55,7 @@ cd gestor360
 
 # 3. Rode o projeto com Maven
 ./mvnw spring-boot:run
+
 
 🔐 Acesso à API
 Após iniciar o projeto, acesse a documentação interativa no Swagger:
