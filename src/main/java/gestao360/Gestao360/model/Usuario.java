@@ -30,4 +30,8 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Cargo cargo;
+
+    @ManyToOne
+    @JoinColumn(name = "Unidade_id", nullable = false)
+    private Unidade unidade;
 }

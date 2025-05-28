@@ -29,4 +29,8 @@ public class PostagemForum {
 
     @Column(nullable = false)
     private  String categoria;
+
+    @ManyToOne
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 }

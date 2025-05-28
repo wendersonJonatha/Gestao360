@@ -29,4 +29,12 @@ public class Tarefa {
 
     @Column(nullable = false)
     private boolean finalizada;
+
+    @ManyToOne
+    @JoinColumn(name = "meta_id", nullable = false)
+    private Meta meta;
+
+    @ManyToOne
+    @JoinColumn(name = "Usuario_id", nullable = false)
+    private Usuario usuario;
 }

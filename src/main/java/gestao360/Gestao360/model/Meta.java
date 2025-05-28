@@ -27,5 +27,8 @@ public class Meta {
     @Column(nullable = false)
     private Boolean concluida;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 
 }

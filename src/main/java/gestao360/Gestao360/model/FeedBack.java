@@ -26,4 +26,8 @@ public class FeedBack {
 
     @Column(nullable = false, name = "Data_envio")
     private LocalDateTime dataDeEnvio;
+
+    @ManyToOne
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 }
