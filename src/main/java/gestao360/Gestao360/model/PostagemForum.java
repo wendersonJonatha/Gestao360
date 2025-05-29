@@ -28,9 +28,55 @@ public class PostagemForum {
     private LocalDate data;
 
     @Column(nullable = false)
-    private  String categoria;
+    private String categoria;
 
     @ManyToOne
-    @JoinColumn(name = "usuario_id", nullable = false)
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
+
+    // Métodos Setters (adicionar esses)
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    // Métodos Getters (recomendado também adicionar)
+    public Long getIdPostagem() {
+        return idPostagem;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getConteudo() {
+        return conteudo;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
 }
