@@ -3,6 +3,7 @@ package gestao360.Gestao360.dto;
 
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 
@@ -17,7 +18,7 @@ public class PostagemDto {
     private LocalDate data;
     private String categoria;
 
-    @NotBlank(message = "Id do usuario é obrigatório")
+    @NotNull(message = "Id do usuario é obrigatório")
     private Long usuarioId;
 
     public String getTitulo() {
