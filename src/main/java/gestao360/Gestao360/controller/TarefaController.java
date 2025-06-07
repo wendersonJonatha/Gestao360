@@ -31,6 +31,7 @@ public class TarefaController {
         Tarefa novaTarefa = tarefaService.salvar(tarefa);
         return  ResponseEntity.status(HttpStatus.CREATED).body(novaTarefa);
     }
+    @DeleteMapping("/{id}")
     public  ResponseEntity<Void> deletar(@PathVariable Long id){
         tarefaService.deletar(id);
         return ResponseEntity.noContent().build();
