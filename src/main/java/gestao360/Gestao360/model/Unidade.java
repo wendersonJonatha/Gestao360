@@ -12,6 +12,38 @@ import lombok.NoArgsConstructor;
 @Table(name = "unidade")
 public class Unidade {
 
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getNomeUnidade() {
+        return nomeUnidade;
+    }
+
+    public void setNomeUnidade(String nomeUnidade) {
+        this.nomeUnidade = nomeUnidade;
+    }
+
+    public Long getIdUnidade() {
+        return idUnidade;
+    }
+
+    public void setIdUnidade(Long idUnidade) {
+        this.idUnidade = idUnidade;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idUnidade;
